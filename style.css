@@ -1,0 +1,385 @@
+/* Estilos base para todas las pantallas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #423F40;
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #423F40;
+}
+
+header {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+header nav,
+section {
+    padding: 0 80px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: #423F40;
+}
+
+header nav ul li:first-child a {
+    color: #8E7BEF;
+}
+
+header a:hover {
+    color: #8E7BEF;
+    transition: 250ms;
+}
+
+.hamburger-menu {
+    cursor: pointer;
+    display: none;
+    padding-right: 30px;
+}
+
+.line {
+    width: 30px;
+    height: 3px;
+    background-color: #FCDA68;
+    margin: 6px 0;
+}
+
+.presentacion {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 70px;
+}
+
+.presentacion img {
+    width: 80%;
+}
+
+.presentacion div {
+    width: 50%;
+}
+
+#de {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.title-subsection {
+    font-size: 24px;
+    color: #423F40;
+}
+
+#text-experience {
+    color: #423F40;
+}
+
+#text-experience span {
+    color: #8E7BEF;
+}
+
+.icons {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.icons div {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #8E7BEF;
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons div:first-child {
+    margin-left: 0;
+}
+
+.presentacion button {
+    width: 250px;
+    height: 37px;
+    border: none;
+    background-color: #8E7BEF;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.presentacion button svg {
+    margin-right: 10px;
+}
+
+.experiencia {
+    background-color: #FCDA68;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #423F40;
+    margin-bottom: 70px;
+}
+
+.experiencia .container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.experiencia .container div:nth-child(2),
+.experiencia .container div:nth-child(1) {
+    width: 40%;
+}
+
+.experiencia table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.experiencia table thead th {
+    text-align: left;
+}
+
+.experiencia table tbody tr {
+    border-bottom: 1px solid #423F40;
+}
+
+.experiencia table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.experiencia table td,
+.experiencia table th {
+    padding: 10px;
+}
+
+.habilidades {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.habilidades div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+    font-size: 17px;
+    width: auto;
+}
+
+.portafolio {
+    padding-bottom: 50px;
+}
+
+.portafolio-content {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.portafolio-content img {
+    width: 90%;
+}
+
+.portafolio-content p {
+    color: #8E7BEF;
+    margin-bottom: 7px;
+    font-weight: 600;
+}
+
+.contacto {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.contacto-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.contacto-content div {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+.content-icon {
+    background-color: #F9F5F2;
+    width: 80px;
+    height: 80px;
+    border-radius: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacto-content p {
+    font-weight: 600;
+    text-align: center;
+    font-size: 16px;
+    padding-top: 15px;
+    color: #423F40;
+}
+
+.contacto-content div p:nth-child(4) {
+    color: #c9c9c8;
+}
+
+footer {
+    padding: 50px 80px;
+    text-align: center;
+    color: #8E7BEF;
+    font-weight: 400;
+}
+
+#titleMobile {
+    text-align: center;
+    display: none;
+}
+#imgPresentacionMobile{
+    display: none;
+}
+
+
+
+
+
+
+
+/* Estilos para Celulares */
+@media (max-width: 882px) {
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    h3 {
+        font-size: 32px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    header nav,#titleDestok, #de {
+        display: none;
+    }
+
+    .hamburger-menu, #imgPresentacionMobile {
+        display: block;
+    }
+
+    header nav,
+    section {
+        padding: 0 30px;
+    }
+
+    #titleMobile, .experiencia .container {
+        display: block;
+    }
+
+    .presentacion {
+        flex-direction: column;
+    }
+
+    .presentacion div {
+        width: 100%;
+    }
+
+    .title-subsection, #text-experience {
+        text-align: center;
+    }
+
+    .icons {
+        justify-content: center;
+    }
+    .icons div{
+        width: 25px;
+        height: 25px;
+    }
+    .presentacion button{
+        margin: 0 auto;
+    }
+    #imgPresentacionMobile{
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
+    .experiencia .container div:nth-child(2), .experiencia .container div:nth-child(1) {
+        width: 100%;
+    }
+    .habilidades{
+        width: 100%;
+        flex-direction: column;
+    }
+    .habilidades div{
+        margin-bottom: 15px;
+    }
+    .portafolio-content{
+        flex-direction: column;
+    }
+    .contacto-content{
+        justify-content: space-between;
+    }
+    .contacto-content div{
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+}
+
+/* Estilos para Tablets */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* Ajustes específicos para tablets aquí */
+}
+
+/* Estilos para Computadoras (Desktops) */
+@media only screen and (min-width: 992px) {
+    /* Ajustes específicos para pantallas grandes (computadoras) aquí */
+}
